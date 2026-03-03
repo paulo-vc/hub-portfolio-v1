@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@paulovruffini | Portfolio</title>
+        
         <link href="assets/css/style.css" rel="stylesheet"/>
-        <title>@paulovruffini</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
     </head>
     <body>
-        
+        <div class="background"></div>
+
+        <header class="main-header">
+            <div class="header-content">
+                <h2 class="logo">Paulo Vinicius</h2>
+                <nav class="menu-buttons">
+                    <ul>
+                        <li><a href="#" onclick="changeTab('home')">Início</a></li>
+                        <li><a href="#" onclick="changeTab('projetos')">Projetos</a></li>
+                        <li><a href="#" onclick="changeTab('edicao')">Edição</a></li>
+                        <li><a href="#" onclick="changeTab('curriculo')">Currículo</a></li>
+                        <li><a href="#" onclick="changeTab('contato')">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-selector">
+                    <button onclick="toggleLang()">PT | EN</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            
+            <section id="home" class="tab-content active">
+                <div class="profile-card">
+                    <div class="avatar-content">
+                        <img src="assets/media/avatar.png" alt="Paulo Vinicius" class="avatar">
+                    </div>
+                    
+                    <h1 class="profile-name">Paulo Vinicius</h1>
+                    <p class="profile-quote">"The fallen leaves tell a story"</p>
+
+                    <div class="profile-aboutme">
+                        <p>
+                            Olá! Eu sou o Paulo, um programador e editor de vídeos brasileiro. Comecei a me interessar pelo mundo tech quando era pequeno. Ganhei um notebook de aniversário e passava horas na frente dele, jogando e aprendendo.
+                            Com o passar do tempo, vi a necessidade de ter meu próprio computador, então tive que aprender na prática como montar todas as peças, e foi assim que adquiri bastante conhecimento sobre hardware.
+                            Por gostar muito de videogame, tive aquela fase que muitas crianças têm de querer se tornar youtuber, então precisei correr atrás de aprender como editar um vídeo para a plataforma. Acabei não seguindo por esse caminho, apesar de ainda ter interesse em criar conteúdo para a internet hoje em dia, mas continuei praticando edição de vídeos ao longo do tempo.
+                        </p>
+                        <p>
+                            Atualmente estou com 22 anos e, depois de todo esse apreço pela tecnologia que fui criando desde pequeno e ao longo da adolescência, pensei: "a melhor opção só pode ser uma faculdade de Computação, certo?"
+                            Então agora faço Engenharia da Computação na UEMG. Futuramente também tenho bastante interesse em fazer um curso de Jogos Digitais, mas, por enquanto, meu foco é terminar meu curso atual.
+                            Enfim, sou bastante interessado em programação e game dev e estou me esforçando para me tornar um bom profissional!
+                            
+                        </p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://github.com/paulo-vc" target="_blank"><i class="ph ph-github-logo" title="Github"></i></a>
+                        <a href="https://instagram.com/paulovruffini" target="_blank"><i class="ph ph-instagram-logo" title="Instagram"></i></a>
+                        <a href="https://x.com/voicezito" target="_blank"><i class="ph ph-x-logo" title="Twitter"></i></a>
+                        <a href="https://voicexd.itch.io" target="_blank"><i class="ph ph-game-controller" title="Itch.io"></i></a>
+                        <a href="https://discord.com/users/voicezito" target="_blank"><i class="ph ph-discord-logo" title="Discord"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="tab-content">
+                <div class="glass-box">
+                    <h2>Meus Projetos</h2>
+                    <p>Lorem ipsum.</p>
+                    </div>
+            </section>
+
+            <section id="video-editing" class="tab-content">
+                <div class="glass-box">
+                    <h2>Edição de Vídeo</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </section>
+
+            </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 Paulo Vinicius - Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
