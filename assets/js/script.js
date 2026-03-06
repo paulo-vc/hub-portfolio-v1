@@ -21,7 +21,7 @@ const translations = {
         'project-3-title': 'Jogo Arkanoid',
         'project-3-desc': 'Um jogo Arkanoid feito no Gamemaker. Feito com propósito de aprendizado.',
         'video-title': 'Edição de Vídeo',
-        'video-desc': 'Como portfólio coloquei alguns vídeos que fiz para alguns servidores de Minecraft!',
+        'video-desc': 'Alguns vídeos que fiz como projeto para um servidor de Minecraft!',
         'contact-desc': 'Sinta-se à vontade para entrar em contato comigo para oportunidades profissionais ou apenas para conversar!',
         'contact-social': 'Redes Sociais',
         'footer-copy': '© 2026 Paulo Vinicius - Todos os direitos reservados'
@@ -48,7 +48,7 @@ const translations = {
         'project-3-title': 'Arkanoid Game',
         'project-3-desc': 'An Arkanoid game developed in Gamemaker. Created for learning purposes.',
         'video-title': 'Video Editing',
-        'video-desc': 'As a portfolio, I included some videos I made for some Minecraft servers!',
+        'video-desc': 'Some videos I made as a project for a Minecraft server!',
         'contact-desc': 'Feel free to contact me for professional opportunities or just to chat!',
         'contact-social': 'Social Media',
         'footer-copy': '© 2026 Paulo Vinicius - All rights reserved'
