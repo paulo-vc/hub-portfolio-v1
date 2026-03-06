@@ -3,15 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@paulovruffini | Portfolio</title>
-        
+        <title>Paulo Vinicius | Portfolio</title>
         <link href="assets/css/style.css" rel="stylesheet"/>
-        
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-        
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <link rel="icon" type="image/png" href="assets/media/icon.png">
     </head>
     <body>
+
         <div class="background"></div>
 
         <header class="main-header">
@@ -19,21 +18,19 @@
                 <h2 class="logo">Paulo Vinicius</h2>
                 <nav class="menu-buttons">
                     <ul>
-                        <li><a href="#" onclick="changeTab('home')">Início</a></li>
-                        <li><a href="#" onclick="changeTab('projetos')">Projetos</a></li>
-                        <li><a href="#" onclick="changeTab('edicao')">Edição</a></li>
-                        <li><a href="#" onclick="changeTab('curriculo')">Currículo</a></li>
-                        <li><a href="#" onclick="changeTab('contato')">Contato</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeTab('home')" data-i18n="nav-home">Início</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeTab('projects')" data-i18n="nav-projects">Projetos</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeTab('video-editing')" data-i18n="nav-video">Edição</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeTab('contact')" data-i18n="nav-contact">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="lang-selector">
                     <button onclick="toggleLang()">PT | EN</button>
                 </div>
-            </div>
+            </div><!--header content-->
         </header>
 
         <main class="content">
-            
             <section id="home" class="tab-content active">
                 <div class="profile-card">
                     <div class="avatar-content">
@@ -41,51 +38,166 @@
                     </div>
                     
                     <h1 class="profile-name">Paulo Vinicius</h1>
-                    <p class="profile-quote">"The fallen leaves tell a story"</p>
+                    <p class="profile-quote" data-i18n="profile-quote">"The fallen leaves tell a story"</p>
+
+                    <div class="tech">
+                        <div class="tech-category">
+                            <span class="tech-title" data-i18n="stack-languages">Linguagens:</span>
+                            <div class="badges-group">
+                                <span class="badge">C</span> 
+                                <span class="badge">C++</span> 
+                                <span class="badge">Python</span> 
+                                <span class="badge">Java</span> 
+                                <span class="badge">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-title" data-i18n="stack-dev">Ferramentas Dev:</span>
+                            <div class="badges-group">
+                                <span class="badge">Visual Studio 2022</span> 
+                                <span class="badge">Visual Studio Code</span>
+                                <span class="badge">Git</span> 
+                                <span class="badge">Github</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-title" data-i18n="stack-front">Front-End:</span>
+                            <div class="badges-group">
+                                <span class="badge">HTML</span> 
+                                <span class="badge">CSS</span> 
+                                <span class="badge">React.JS</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <span class="tech-title" data-i18n="stack-other">Game Dev e Edição:</span>
+                            <div class="badges-group">
+                                <span class="badge">Gamemaker</span> 
+                                <span class="badge">Godot Engine</span>
+                                <span class="badge">Davinci Resolve</span> 
+                                <span class="badge">Vegas Pro</span>
+                            </div>
+                        </div>
+                    </div><!--techs-->
+
+                    <button class="btn-read-more" onclick="toggleAboutMe()" data-i18n="btn-read">Sobre mim</button>
 
                     <div class="profile-aboutme">
-                        <p>
-                            Olá! Eu sou o Paulo, um programador e editor de vídeos brasileiro. Comecei a me interessar pelo mundo tech quando era pequeno. Ganhei um notebook de aniversário e passava horas na frente dele, jogando e aprendendo.
-                            Com o passar do tempo, vi a necessidade de ter meu próprio computador, então tive que aprender na prática como montar todas as peças, e foi assim que adquiri bastante conhecimento sobre hardware.
-                            Por gostar muito de videogame, tive aquela fase que muitas crianças têm de querer se tornar youtuber, então precisei correr atrás de aprender como editar um vídeo para a plataforma. Acabei não seguindo por esse caminho, apesar de ainda ter interesse em criar conteúdo para a internet hoje em dia, mas continuei praticando edição de vídeos ao longo do tempo.
+                        <p data-i18n="about-p1">
+                            Olá! Eu sou o Paulo, um programador e editor de vídeos brasileiro. Comecei a me interessar pelo mundo tech quando era pequeno. Ganhei um notebook de aniversário e passava horas na frente dele, jogando e aprendendo.<br>
+                            Com o passar do tempo, vi a necessidade de ter meu próprio computador, então tive que aprender na prática como montar todas as peças, e foi assim que adquiri bastante conhecimento sobre hardware.<br>
+                            Por gostar muito de jogos, tive aquela fase que muitas crianças têm de querer se tornar youtuber, então precisei correr atrás de aprender como editar um vídeo para a plataforma. Acabei não seguindo por esse caminho, apesar de ainda ter interesse em criar conteúdo para a internet hoje em dia, mas continuei praticando edição de vídeos ao longo do tempo.
                         </p>
-                        <p>
-                            Atualmente estou com 22 anos e, depois de todo esse apreço pela tecnologia que fui criando desde pequeno e ao longo da adolescência, pensei: "a melhor opção só pode ser uma faculdade de Computação, certo?"
-                            Então agora faço Engenharia da Computação na UEMG. Futuramente também tenho bastante interesse em fazer um curso de Jogos Digitais, mas, por enquanto, meu foco é terminar meu curso atual.
-                            Enfim, sou bastante interessado em programação e game dev e estou me esforçando para me tornar um bom profissional!
-                            
+                        <p data-i18n="about-p2">
+                            Atualmente estou com 22 anos e, depois de todo esse apreço pela tecnologia que fui criando desde pequeno e ao longo da adolescência, pensei: "a melhor opção só pode ser uma faculdade de Computação, certo?"<br>
+                            Então agora faço Engenharia da Computação na UEMG. Futuramente também tenho bastante interesse em fazer um curso de Jogos Digitais, mas, por enquanto, meu foco é terminar meu curso atual.<br>
+                            Enfim, sou bastante interessado em programação e game dev e estou me esforçando para me tornar um bom profissional.
                         </p>
                     </div>
                     
                     <div class="social-icons">
-                        <a href="https://github.com/paulo-vc" target="_blank"><i class="ph ph-github-logo" title="Github"></i></a>
-                        <a href="https://instagram.com/paulovruffini" target="_blank"><i class="ph ph-instagram-logo" title="Instagram"></i></a>
-                        <a href="https://x.com/voicezito" target="_blank"><i class="ph ph-x-logo" title="Twitter"></i></a>
-                        <a href="https://voicexd.itch.io" target="_blank"><i class="ph ph-game-controller" title="Itch.io"></i></a>
-                        <a href="https://discord.com/users/voicezito" target="_blank"><i class="ph ph-discord-logo" title="Discord"></i></a>
+                        <a href="https://github.com/paulo-vc" target="_blank"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/pauloruffini/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://instagram.com/paulovruffini" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://voicexd.itch.io" target="_blank"><i class="ph ph-game-controller"></i></a>
+                        <!--
+                        <a href="https://x.com/voicezito" target="_blank"><i class="ph ph-x-logo"></i></a>
+                        <a href="https://discord.com/users/voicezito" target="_blank"><i class="ph ph-discord-logo"></i></a>
+                        (mantem esses em segredo rs)-->
                     </div>
-                </div>
-            </section>
+                </div><!--profile card-->
+            </section> <!--home-->
 
             <section id="projects" class="tab-content">
                 <div class="glass-box">
-                    <h2>Meus Projetos</h2>
-                    <p>Lorem ipsum.</p>
+                    <h2 data-i18n="projects-title">Meus Projetos</h2>
+                    
+                    <div class="project-item">
+                        <h3 data-i18n="project-1-title">Sistema de Busca Vetorial em C#</h3>
+                        <p data-i18n="project-1-desc">Este sistema foi feito em C# no Visual Studio 2022 usando a interface do Windows Forms App (.NET) e tem a função de buscar produtos utilizando um modelo de busca vetorial, baseado no cálculo de similaridade de textos (TF-IDF).</p>
+                        <a href="https://github.com/paulo-vc/Sistema-de-Busca-Vetorial" target="_blank">
+                            <img src="assets/media/busca-vetorial.png" alt="Busca Vetorial" class="project-img">
+                        </a>
                     </div>
-            </section>
+
+                    <div class="project-item">
+                        <h3 data-i18n="project-2-title">Jogo de corrida</h3>
+                        <p data-i18n="project-2-desc">Um jogo de corrida feito no Gamemaker usando assets prontos de um curso. Feito com propósito de aprendizado. (O jogo se encontra quebrado atualmente, não é possível morrer.)</p>
+                        <a href="https://voicexd.itch.io/fast-racing" target="_blank">
+                            <img src="assets/media/race.png" alt="Jogo de Corrida" class="project-img">
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 data-i18n="project-3-title">Jogo Arkanoid</h3>
+                        <p data-i18n="project-3-desc">Um jogo Arkanoid feito no Gamemaker. Feito com propósito de aprendizado.</p>
+                        <a href="https://voicexd.itch.io/arka-basic" target="_blank">
+                            <img src="assets/media/arkanoid.png" alt="Jogo Arkanoid" class="project-img">
+                        </a>
+                    </div>
+                </div> <!--glass box-->
+            </section> <!--projects-->
 
             <section id="video-editing" class="tab-content">
                 <div class="glass-box">
-                    <h2>Edição de Vídeo</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
-            </section>
+                    <h2 data-i18n="video-title">Edição de Vídeo</h2>
+                    <p data-i18n="video-desc">Como portfólio coloquei alguns vídeos que fiz para alguns servidores de Minecraft!</p>
 
-            </main>
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <h3>Burn Film Effect</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YAi20AbVw5c?si=eZSBQPeh0z4anYjs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="video-item">
+                            <h3>Computador velho</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DIOCL4bmpK8?si=sec_mb_PtrKGiGdY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="video-item">
+                            <h3>Sunshine Build</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lGejX0jrNBc?si=8bPiI3l3VqGEY5Ii" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    
+                        <div class="video-item">
+                            <h3>Papel sendo formado</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/50PbRbABxy4?si=TLYsA3pu2ZMbxk6W" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="video-item">
+                            <h3>Minecraft terror</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hw3nJvLGb1s?si=rW0NnLo7cRyImEp9" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    
+                        <div class="video-item">
+                            <h3>Analog Horror</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YXmxtpOZSH4?si=qh9Q4xU1tABdYtWZ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div> <!--video grid-->
+                </div> <!--glass box-->
+            </section><!--video editing-->
+
+            <section id="contact" class="tab-content">
+                <div class="glass-box contact-section">
+                    <h2 data-i18n="nav-contact">Contato</h2>
+                    <p data-i18n="contact-desc">Sinta-se à vontade para entrar em contato comigo para oportunidades profissionais ou apenas para conversar!</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:contato.paulovruffini@gmail.com" class="contact-item">
+                            <i class="ph ph-envelope"></i>
+                            <span>contato.paulovruffini@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pauloruffini/" target="_blank" class="contact-item">
+                            <i class="ph ph-linkedin-logo"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div><!--glass box-->
+            </section><!--contact-->
+        </main>
 
         <footer class="main-footer">
             <div class="footer-content">
-                <p>&copy; 2026 Paulo Vinicius - Todos os direitos reservados</p>
+                <p data-i18n="footer-copy">&copy; 2026 Paulo Vinicius - Todos os direitos reservados</p>
             </div>
         </footer>
 
