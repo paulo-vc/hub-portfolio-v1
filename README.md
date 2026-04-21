@@ -1,30 +1,30 @@
 # Website Portfolio
 
-Este é o repositório da primeira versão do meu portfólio pessoal, desenvolvido para centralizar meus projetos de programação, experiências com edição de vídeo e habilidades técnicas.
+This is the repository for the first version of my personal portfolio, developed to centralize my programming projects, video editing experience, and technical skills.
 
-**🔗 [Acesse o Portfólio Online](https://paulo-vc.github.io/website-portfolio-v1/)**
+**🔗 [Access the Live Portfolio here](https://paulo-vc.github.io/website-portfolio-v1/)**
 
 ---
 
-## Sobre o Projeto
+## About the Project
 
-O objetivo deste projeto foi criar uma interface moderna e responsiva que reflita minha identidade como desenvolvedor e editor. O site apresenta:
+The goal of this project was to create a modern and responsive interface that reflects my identity as a developer and editor. The site features:
 
-* **Seção Sobre Mim:** Detalhes sobre minha trajetória acadêmica em Engenharia de Computação na UEMG e minha paixão por hardware e desenvolvimento.
-* **Showcase de Projetos:** Exibição de softwares (como o Sistema de Busca Vetorial em C#) e jogos desenvolvidos no GameMaker e Godot.
-* **Portfólio de Edição:** Galeria de trabalhos em vídeo, incluindo efeitos de *Burn Film* e produções para Minecraft.
-* **Internacionalização:** Suporte para Português (PT) e Inglês (EN).
+* **About Me Section:** Details about my academic journey in Computer Engineering at UEMG and my passion for hardware and development.
+* **Project Showcase:** Display of software (such as the Vector Search System in C#) and games developed in GameMaker and Godot.
+* **Editing Portfolio:** A gallery of video works, including *Burn Film* effects and Minecraft-themed productions.
+* **Internationalization:** Support for both Portuguese (PT) and English (EN).
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-O projeto foi construído utilizando as seguintes tecnologias e ferramentas:
+The project was built using the following technologies and tools:
 
 * **Front-end:** HTML5, CSS3, JavaScript.
-* **Hospedagem:** GitHub Pages.
-* **Ferramentas:** Visual Studio Code, Git e GitHub.
+* **Hosting:** GitHub Pages.
+* **Tools:** Visual Studio Code, Git, and GitHub.
 
 ---
 
-# Contato
-- **Email:** contato.paulovruffini@gmail.com
-- **LinkedIn:** [Paulo Ruffini](https://www.linkedin.com/in/pauloruffini)
+# Contact
+* **Email:** [contato.paulovruffini@gmail.com](mailto:contato.paulovruffini@gmail.com)
+* **LinkedIn:** [Paulo V. Ruffini](https://www.linkedin.com/in/paulovruffini)
